@@ -45,20 +45,21 @@ function CrearCita({ onAgregarTarjeta }) {
           className="u-full-width"
           placeholder="Nombre Mascota"
           id="mascota"
+          required
         />
         <label>Nombre Dueño</label>
         <input
           type="text"
           name="propietario"
           className="u-full-width"
-          placeholder="Nombre dueño de la mascota"
+          placeholder="Nombre dueño de la mascota" required
         />
         <label>Fecha</label>
-        <input type="date" name="fecha" className="u-full-width" />
+        <input type="date" name="fecha" className="u-full-width" required />
         <label>Hora</label>
-        <input type="time" name="hora" className="u-full-width" />
+        <input type="time" name="hora" className="u-full-width" required />
         <label>Síntomas</label>
-        <textarea name="sintomas" className="u-full-width"></textarea>
+        <textarea name="sintomas" className="u-full-width" required></textarea>
         <button type="submit" className="hola u-full-width button-primary">
           Agregar Cita
         </button>
